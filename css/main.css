@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: antiquewhite;
+}
+
+.main-header{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(72, 69, 69);
+    margin-bottom: 50px;
+}
+
+.main-header h1{
+    margin-inline-start: 30px;
+}
+
+.header-user-acts{
+    display: flex;
+    align-items: center;
+    gap:20px;
+}
+
+[name=loc-search]{
+    width: 300px;
+    height: 35px;
+    border-radius: 10px;
+    font-size: 1.3rem;
+    padding-inline-start: 10px;
+}
+
+.btn-user-pos{
+    height: 35px;
+    margin-inline-end: 30px;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
+.main-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    /* width: 80%; */
+    align-content: space-between;
+}
+
+.map-section{
+    width:80%;
+    /* margin-inline-end: 30px; */
+}
+
+table {
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+tr{
+    border: 1px solid black;
+    padding: 5px;
+}
+
+td{
+    border: 1px solid black;
+    padding: 5px;
+}
+
+button{
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: lightgray;
+}
+
+.btn-get-locs{
+    width: 920px;
+    height: 115px;
+    background-color: rgb(2, 44, 92);
+    font-size: 2rem;
+}
+
+.hide{
+    display: none;
+}

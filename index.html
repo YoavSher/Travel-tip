@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelTip</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <header class="main-header">
+        <h1>TravelTip Starter</h1>
+        <div class="header-user-acts">
+            <form onsubmit="onSearchLocation(event)">
+                <input type="search" name="loc-search" placeholder="Please enter a place">
+            </form>
+            <button onclick="onGetUserPos()" class="btn-user-pos">Get User Position</button>
+        </div>
+    </header>
+    <button onclick="onCopyTxt()">Copy text</button>
+    <main class="main-section">
+        <div class="map-section">
+            <div id="map" style="width: 100%; height: 400px;"></div>
+        </div>
+        .
+        <!-- <button onclick="onAddMarker()" class="btn-add-marker">Add Marker Speific Location</button> -->
+        <!-- <button onclick="onPanTo()" class="btn-pan">Pan Map to Tokyo</button> -->
+
+        <div class="main-user-acts">
+            <p>You are at: <span class="user-pos"></span></p>
+            <!-- <pre class="locs"> -->
+            <button onclick="onGetLocs()" class="btn-get-locs">Get Locations</button>
+            <table class="hide loc-table">
+                <thead>
+                    <tr>
+                        <th>NAME</th>
+                        <th>LAT</th>
+                        <th>LNG</th>
+                        <th>CREATED AT</th>
+                    </tr>
+                </thead>
+                <tbody class="location-display"></tbody>
+            </table>
+            <!-- </pre> -->
+            <section class="weather-box"></section>
+        </div>
+    </main>
+    <script src="lib/axios.js"></script>
+    <script type="module" src="js/app.controller.js"></script>
+</body>
+
+</html>
